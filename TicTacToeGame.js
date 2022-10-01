@@ -97,11 +97,9 @@ function mousePressed(){
                     boardData[i] = 'X';
                     currentPlayer = opponent;
                     arrayRemove(currentlyAvailableSlots, i);
-                    print(currentlyAvailableSlots);
                 } else if ((currentPlayer === 2) && (boardData[i] == null)){
                     boardData[i] = 'O';
                     arrayRemove(currentlyAvailableSlots, i);
-                    print(currentlyAvailableSlots);
                     currentPlayer = 1;
                 }
             }           
@@ -374,7 +372,6 @@ function CPUMove(){
             while(currentlyAvailableSlots.length > 0){
                 if (currentlyAvailableSlots.length > 1) {
                     randomMove = int(random(0,currentlyAvailableSlots.length));
-                    print(randomMove);
                     if (boardData[randomMove] == null) {
                         boardData[randomMove] = 'O';   
                         arrayRemove(currentlyAvailableSlots, randomMove);        
