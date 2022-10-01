@@ -18,23 +18,15 @@ const boardLinesPosition = [ //multidimenssional arrays again just cause I like 
 ];
 
 let won = false;
-
 let backgroundColor = 150;
-
 let boardData = []; //this is the container for the moves that players will make
-
 let currentPlayer = 1;
-
 let Player1Score = 0;
 let Player2Score = 0;
 let PlayerCPUScore = 0;
-
 let opponent = 2;
-
 let randomMove;
-
 let mode = 0;
-
 let currentlyAvailableSlots = [0,1,2,3,4,5,6,7,8];
 
 function setup() {
