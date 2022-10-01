@@ -38,7 +38,7 @@ function setup() {
     multiPlayer.position(innerWidth/2+boardSlotVector[0][0]-250, innerHeight/2+boardSlotVector[0][1]+150);
     multiPlayer.mousePressed(function(){ changeMode(1); });
 
-    VSHardCPU = createButton('Vs okay CPU');
+    VSHardCPU = createButton('Vs Hakdog Computer');
     VSHardCPU.style("font-size", "20px");
     VSHardCPU.style('background-color', color(246,190,0));
     VSHardCPU.position(innerWidth/2+boardSlotVector[0][0]-250, innerHeight/2+boardSlotVector[0][1]+100);
@@ -276,7 +276,7 @@ function titleAndLabels(){
         text("Player 2 Score: " + Player2Score,-50,-50);
     }
     if (opponent == 3){
-        text("CPU Score: " + Player2Score,-50,-50);
+        text("Computer Score: " + Player2Score,-50,-50);
     }
 
     pop();
